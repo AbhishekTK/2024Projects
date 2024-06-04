@@ -1,0 +1,119 @@
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"sort"
+	"time"
+
+	"rsc.io/quote"
+)
+
+func someFun(name string) {
+
+	fmt.Println("Hi", name)
+}
+
+func main() {
+	sliceFunction()
+	go someFun("Abhi")
+	go someFun("Pooh")
+	time.Sleep(time.Second * 2)
+	mainAlso()
+
+	mainActualConcurrentMethod()
+}
+
+func sliceFunction() {
+	slice1 := []byte{'*', 'G', 'e', 'e', 'k', 's', 'f',
+		'o', 'r', 'G', 'e', 'e', 'k', 's', '^', '^'}
+	slice2 := []string{"Gee", "ks", "for", "Gee", "ks"}
+
+	res := bytes.Trim(slice1, "*^")
+	fmt.Printf("\n : %v ", res)
+	sort.Strings(slice2)
+	fmt.Printf("\n : %v ", slice2)
+}
+
+func mainActualConcurrentMethod() {
+	// panic("unimplemented")
+	chnl := make(chan int)
+	go func() {
+		chnl <- 100
+		chnl <- 99
+		chnl <- 12345
+		close(chnl)
+	}()
+
+	for i := range chnl {
+		fmt.Println("Channel %d", i)
+	}
+
+	myChan := make(chan string)
+	go func() {
+		myChan <- "Vamos"
+		myChan <- "Amigos"
+		close(myChan)
+	}()
+
+	myChan2 := make(chan string)
+	go func() {
+		myChan <- "cow"
+		myChan <- "hen"
+		close(myChan)
+	}()
+
+	msg := <-myChan
+	fmt.Println(msg)
+
+	for i := range myChan {
+		fmt.Println("Channel %v", i)
+	}
+
+
+	//select
+	select {
+	case i := <- myChan:
+		fmt.Println(i)
+	
+	case j := <- myChan2:
+		fmt.Println(j)
+	
+	}
+}
+
+/* func main() {
+	fmt.Println("Hello ")
+} */
+
+func mainAlso() {
+
+	fmt.Println(quote.Go())
+
+	i := 0
+
+	for i < 3 {
+		if i == 0 {
+			fmt.Println(" : %v", i)
+		}
+		i += 1
+
+	}
+	a := []string{
+		"bonito",
+		"boligrafo",
+	}
+	for i, j := range a {
+		fmt.Println(i, j)
+	}
+
+	ss := map[int]string{
+		00: "Westbrook",
+		99: "Problems",
+	}
+	for key, value := range ss {
+		fmt.Println(key, value)
+
+	}
+	someFun(ss[0])
+}
