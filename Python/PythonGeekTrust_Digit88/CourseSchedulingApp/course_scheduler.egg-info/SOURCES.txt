@@ -1,0 +1,6 @@
+setup.py
+course_scheduler.egg-info/PKG-INFO
+course_scheduler.egg-info/SOURCES.txt
+course_scheduler.egg-info/dependency_links.txt
+course_scheduler.egg-info/top_level.txt
+test/test_courseSchApp.py

@@ -1,0 +1,27 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "sample node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhishekTK/tsSampleProject.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "angular"
+  ],
+  "author": "AbhiTk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhishekTK/tsSampleProject/issues"
+  },
+  "homepage": "https://github.com/AbhishekTK/tsSampleProject#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,247 @@
+Microsoft Windows [Version 10.0.19045.4291]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\abhi06tk>cd D:\
+
+C:\Users\abhi06tk>D:\
+'D:\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhi06tk>cd D:\
+
+C:\Users\abhi06tk>cd\ D:\
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\abhi06tk>cd ..
+
+C:\Users>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 7256-D459
+
+ Directory of C:\Users
+
+19/01/2022  13:24    <DIR>          .
+19/01/2022  13:24    <DIR>          ..
+01/04/2024  17:55    <DIR>          abhi06tk
+27/04/2020  01:30    <DIR>          defaultuser100000
+19/01/2022  13:30    <DIR>          monic
+02/10/2020  16:20    <DIR>          Public
+               0 File(s)              0 bytes
+               6 Dir(s)  206,050,353,152 bytes free
+
+C:\Users>cd \d D:\
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users>cd /d D:\
+
+D:\>cd Software
+
+D:\Software>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 903A-C520
+
+ Directory of D:\Software
+
+08/04/2024  20:49    <DIR>          .
+08/04/2024  20:49    <DIR>          ..
+20/02/2024  22:40    <DIR>          20230804
+20/04/2024  05:38    <DIR>          2024
+10/03/2024  16:03    <DIR>          AfterBilldesk_PythonSetup_Books
+17/04/2024  16:33    <DIR>          installersEXEsetupsSW_vscode_vlc_
+17/08/2023  05:31    <DIR>          leetcodeRally
+               0 File(s)              0 bytes
+               7 Dir(s)  23,761,928,192 bytes free
+
+D:\Software>cd 202
+The system cannot find the path specified.
+
+D:\Software>cd 2024
+
+D:\Software\2024>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 903A-C520
+
+ Directory of D:\Software\2024
+
+20/04/2024  05:38    <DIR>          .
+20/04/2024  05:38    <DIR>          ..
+08/04/2024  20:50    <DIR>          Java
+20/04/2024  07:42    <DIR>          Python
+18/04/2024  16:53    <DIR>          TypeScript
+               0 File(s)              0 bytes
+               5 Dir(s)  23,761,928,192 bytes free
+
+D:\Software\2024>cd Python
+
+D:\Software\2024\Python>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 903A-C520
+
+ Directory of D:\Software\2024\Python
+
+20/04/2024  07:42    <DIR>          .
+20/04/2024  07:42    <DIR>          ..
+20/04/2024  07:43    <DIR>          .vscode
+20/04/2024  14:49             2,190 sampleProgram.py
+               1 File(s)          2,190 bytes
+               3 Dir(s)  23,761,928,192 bytes free
+
+D:\Software\2024\Python>mkdir system_design
+
+D:\Software\2024\Python>cd system_design
+
+D:\Software\2024\Python\system_design>mkdir python
+
+D:\Software\2024\Python\system_design>cd python
+
+D:\Software\2024\Python\system_design\python>mkdir src
+
+D:\Software\2024\Python\system_design\python>cd src
+
+D:\Software\2024\Python\system_design\python\src>mkdir auth
+
+D:\Software\2024\Python\system_design\python\src>cd auth
+
+D:\Software\2024\Python\system_design\python\src\auth>python3 -m venv venv
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+D:\Software\2024\Python\system_design\python\src\auth>python3 -version
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+D:\Software\2024\Python\system_design\python\src\auth>python -m venv venv
+
+D:\Software\2024\Python\system_design\python\src\auth>vim server.py
+'vim' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>source ./venv/bin/activate
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>source venv/bin/activate
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 903A-C520
+
+ Directory of D:\Software\2024\Python\system_design\python\src\auth
+
+21/04/2024  17:42    <DIR>          .
+21/04/2024  17:42    <DIR>          ..
+21/04/2024  17:42                 0 server.py
+21/04/2024  17:41    <DIR>          venv
+               1 File(s)              0 bytes
+               3 Dir(s)  23,744,798,720 bytes free
+
+D:\Software\2024\Python\system_design\python\src\auth>source ./venv/bin/activate
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>source ./venv/scripts/activate
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>source .\venv\Scripts\activate
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Software\2024\Python\system_design\python\src\auth>.\venv\Scripts\activate
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>env | grep VIRTUAL
+'env' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>pip --version
+pip 20.2.3 from d:\software\2024\python\system_design\python\src\auth\venv\lib\site-packages\pip (python 3.8)
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>echo $VIRTUAL
+$VIRTUAL
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>condo env list | grep VIRTUAL
+'condo' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>conda env list | grep VIRTUAL
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>conda env list
+# conda environments:
+#
+base                  *  C:\Users\abhi06tk\Anaconda3
+                         C:\Users\abhi06tk\anaconda3
+
+
+(venv) D:\Software\2024\Python\system_design\python\src\auth>a
+
+
+
+
+
+
+
+
+@@@@@ng angular 
+
+
+D:\Software\2024\TypeScript\angularProj1>npm --version
+10.5.0
+
+D:\Software\2024\TypeScript\angularProj1>npm i @angular/cli -g
+
+added 236 packages in 3m
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+D:\Software\2024\TypeScript\angularProj1>ng --version
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+
+D:\Software\2024\TypeScript\angularProj1>ng --version
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+
+D:\Software\2024\TypeScript\angularProj1>ng --version
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+
+D:\Software\2024\TypeScript\angularProj1>ng --version
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+
+
+
+D:\Software\2024\TypeScript\angularProj1>ng new groceryApp
+? Which stylesheet format would you like to use? Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss
+          ]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? Yes
+CREATE groceryApp/angular.json (3039 bytes)
+CREATE groceryApp/package.json (1277 bytes)
+CREATE groceryApp/README.md (1091 bytes)
+CREATE groceryApp/tsconfig.json (889 bytes)
+CREATE groceryApp/.editorconfig (290 bytes)
+CREATE groceryApp/.gitignore (590 bytes)
+CREATE groceryApp/tsconfig.app.json (342 bytes)
+CREATE groceryApp/tsconfig.spec.json (287 bytes)
+CREATE groceryApp/server.ts (1759 bytes)
+CREATE groceryApp/.vscode/extensions.json (134 bytes)
+CREATE groceryApp/.vscode/launch.json (490 bytes)
+CREATE groceryApp/.vscode/tasks.json (980 bytes)
+CREATE groceryApp/src/main.ts (256 bytes)
+CREATE groceryApp/src/favicon.ico (15086 bytes)
+CREATE groceryApp/src/index.html (309 bytes)
+CREATE groceryApp/src/styles.scss (81 bytes)
+CREATE groceryApp/src/main.server.ts (271 bytes)
+CREATE groceryApp/src/app/app.component.html (20239 bytes)
+CREATE groceryApp/src/app/app.component.spec.ts (957 bytes)
+CREATE groceryApp/src/app/app.component.ts (320 bytes)
+CREATE groceryApp/src/app/app.component.scss (0 bytes)
+CREATE groceryApp/src/app/app.config.ts (330 bytes)
+CREATE groceryApp/src/app/app.routes.ts (80 bytes)
+CREATE groceryApp/src/app/app.config.server.ts (361 bytes)
+CREATE groceryApp/src/assets/.gitkeep (0 bytes)
+
+

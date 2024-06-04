@@ -1,0 +1,24 @@
+https://www.baeldung.com/spring-angular-ecommerce
+
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version>
+    <scope>provided</scope>
+</dependency>
+
+
+
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.9.6</version>
+</dependency>
+
+
+https://spring.io/guides/gs/accessing-data-mysql#initial
+https://www.twilio.com/en-us/blog/beginner-mysql-database-java-spring-boot
+
+
+
